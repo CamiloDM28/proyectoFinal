@@ -57,6 +57,8 @@ class Usuario {
 
 function adicionarUsuario(){
 
+
+
     var usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");;
 
     var identificacionInput = document.getElementById("identificacion");
@@ -66,6 +68,12 @@ function adicionarUsuario(){
     var fechaDeCreacionDelUsuarioInput = document.getElementById("fechaDeCreacion");
 
     usuario = new Usuario(identificacionInput.value,correoInput.value, claveInput.value,rolSelect.value , fechaDeCreacionDelUsuarioInput.value);
+
+   
+    var administrador = new Usuario("admin", "admin@example.com", "admin123", "administrador", "2023-01-01");
+    usuarios.push(administrador);
+
+
     usuarios.push(usuario);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
