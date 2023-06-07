@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilosIniciosesion.css">
+  <script src="../js/login.js"></script>
+  <script src="../js/gestionclientes.js"></script>
+  <script src="../js/administrador.js"></script>
+  <title>Iniciar Sesión</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Iniciar Sesión</h2>
+    <img src="../recursos/imagenes/usuario.png" alt="">
+    <br> <br> 
+    <form action="javascript:login()">
+      <label for="numero_identificacion">Identificación:</label>
+      <br>
+      <input type="text" id="numero_identificacion" name="numero_identificacion" required pattern="[A-Za-z0-9]+" />
+      <br><br>
+      <label for="contrasena">Contraseña:</label>
+      <br>
+      <input type="password" id="contrasena" name="contrasena" required />
+      <br><br>
+      <button onclick="login()" id="acceder">Acceder</button>
+    </form> <br> <br>
+    <p>¿No tienes cuenta? 
+        <br> <br> <a href="./gestiondeclientes.html">Regístrate aquí</a>.</p>
+  </div>
+
+</body>
+</html>
+  
+  

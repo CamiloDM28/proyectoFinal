@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F6F1F1;
+}
+
+nav{
+    margin-top: -18px;
+    margin-right: -70px;
+}
+
+.container {
+    width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F6F1F1;
+}
+
+.container h2{
+    background-color: #19A7CE;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    height: 35px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group .combobox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group .btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-group .btn-container button {
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-row .form-group {
+    margin-bottom: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column .form-group {
+    margin-bottom: 20px;
+}
+
+.form-row .form-group.inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.form-row .form-group.inline label {
+    margin-right: 10px;
+}
+
+.form-row .form-group.inline input[type="text"] {
+    width: 70px;
+}
+
+.form-group.inline input[type="text"] {
+    margin-top: 5px;
+}
+
+button{
+    color: #F6F1F1;
+    background-color: black;
+    width: 70px;
+    height: 25px;
+}

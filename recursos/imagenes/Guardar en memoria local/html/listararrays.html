@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Arrays</title>
+    <script src="../js/objetos.js"></script>
+</head>
+<body>
+
+    <h1>Listar Arrays</h1>
+
+    <p>Ver el listado de los elementos de los arrays por console</p>
+
+    <script>
+
+
+        console.log("Clientes Registrados")
+        console.log(JSON.parse(localStorage.getItem("clientes") || "[]"))
+        console.log(JSON.parse(localStorage.getItem("empleados") || "[]"))
+
+
+    </script>
+
+    <a href="../index.html">Volver Inicio</a>
+    
+</body>
+</html>

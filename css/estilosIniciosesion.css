@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: #F6F1F1;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    width: 200px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+  }
+
+  img {
+    width: 100px; 
+  }
+
+  #acceder{
+    background-color: black;
+    color: #F6F1F1;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+  }
+  

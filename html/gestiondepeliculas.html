@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosgestionpeliculas.css">
+    <script src="../js/gestionpeliculas.js"></script>
+    <title>Gestion de peliculas</title>
+</head>
+
+<body>
+
+    <h1>Gestion de peliculas</h1>
+
+    <form action="javascript:agregarActor()">
+
+        <div id="pelcula-nombreOrigina">
+            <div id="pelicula">
+                <h3>Pelicula</h3>
+                <select id="peliculas">
+                    <option value="#">#</option>
+                </select>
+            </div>
+
+            <div id="nombreOriginal">
+                <h3>Nombre Original</h3>
+                <input type="text">
+            </div>
+        </div>
+
+        <div id="codigo-nombreAsignado">
+            <div id="codigo">
+                <h3>Codigo</h3>
+                <input type="text">
+            </div>
+
+            <div id="nombreAsignado">
+                <h3>Nombre Asignado</h3>
+                <input type="text">
+            </div>
+        </div>
+
+        <div id="genero-idiomaOriginal">
+            <div id="genero">
+                <h3>Genero</h3>
+                <input type="text">
+            </div>
+
+            <div id="idiomaOriginal">
+                <h3>Idioma Original</h3>
+                <input type="text">
+            </div>
+        </div>
+
+        <div id="idiomasDisponibles">
+            <h3>Idiomas Disponibles</h3>
+            <input type="checkbox" id="idioma1" value="xxxxx">
+            <label for="idioma1">xxxx</label>
+            <input type="checkbox" id="idioma2" value="xxxxx">
+            <label for="idioma2">xxxx</label>
+            <input type="checkbox" id="idioma3" value="xxxxx">
+            <label for="idioma3">xxxx</label>
+            <input type="checkbox" id="idioma4" value="xxxxx">
+            <label for="idioma4">xxxx</label>
+        </div>
+
+        <div id="subtitulosDisponibles">
+            <h3>Subtitulos Disponibles</h3>
+            <input type="checkbox" id="subtitulo1" value="xxxxx">
+            <label for="subtitulo1">xxxx</label>
+            <input type="checkbox" id="subtitulo2" value="xxxxx">
+            <label for="subtitulo2">xxxx</label>
+            <input type="checkbox" id="subtitulo3" value="xxxxx">
+            <label for="subtitulo3">xxxx</label>
+            <input type="checkbox" id="subtitulo4" value="xxxxx">
+            <label for="subtitulo4">xxxx</label>
+        </div>
+
+        <div id="duracion-afiches-copias">
+            <div id="duracion">
+                <div id="horas">
+                    <h3>Duracion en horas</h3>
+                    <input type="number" id="horas" maxlength="2">:
+                    
+                </div>
+
+                <div id="minutos">
+                    <h3>minutos</h3>
+                    <input type="number" id="minutos">:
+                </div>
+
+                <div id="segundos">
+                    <h3>segundos</h3>
+                    <input type="number" id="segundos">
+                </div>
+            </div>
+
+            <div id="afiches">
+                <h3>Afiches</h3>
+                <input type="text">
+            </div>
+
+            <div id="copias">
+                <h3>copias</h3>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div id="productora">
+        <h3>Productora</h3>
+        <input type="text">
+        </div>
+
+        <div id="actores">
+            <div id="actoresPrincipales">
+                <h3>Actores Principales</h3>
+                <input type="text">
+                
+                <button class="agregar">X</button>
+            </div>
+
+            <button type="submit" class="agregar" onclick="agregarActor()"></button>
+            
+
+            <div id="actoresSecundarios">
+                <h3>Actores Secundarios</h3>
+                <input type="text">
+                <button class="agregar"></button>
+                <button class="agregar"></button>
+            </div>
+        </div>
+
+        <div id="botones">
+        <button type="submit">Guardar</button>
+        <button>Eliminar</button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

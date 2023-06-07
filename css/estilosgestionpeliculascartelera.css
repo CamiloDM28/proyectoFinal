@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: #F6F1F1;
+}
+
+h1{
+    background-color: #19A7CE;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 45px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+input[type="number"] {
+    width: 70px;
+}
+
+button {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #F6F1F1;
+    background-color: black;
+}
+
+.error-message {
+    color: red;
+}

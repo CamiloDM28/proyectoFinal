@@ -1,0 +1,127 @@
+body{
+    text-align: center;
+    background-color: #F6F1F1;
+}
+
+h1{
+    background-color: #19A7CE;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height:  45px;
+}
+
+hr{
+    margin-top: 30px;
+    border-width: 4px;
+    border-color: #000000;
+}
+
+.columnaPequeña{
+    width: 80px;
+}
+
+.columnaMediana{
+    width: 160px;
+}
+
+#columnaPelicula{
+    width: 420px;
+}
+
+#inputsSuperiores{
+    display: flex;
+    justify-content: center;
+}
+
+#inputsSuperiores h3{
+    text-align: left;
+}
+
+#numeros input{
+    width: 350px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+#selectorDePeliculas{
+    width: 350px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+#cantidades input{
+    width: 200px;
+    height: 20px;
+}
+
+#inputsInferiores{
+    display: flex;
+    justify-content: center;
+}
+
+#inputsInferiores h3{
+    text-align: left;
+}
+
+#fecha input{
+    width: 230px;
+    height: 25px;
+    margin-right: 200px;
+}
+
+#precios input{
+    width: 80px;
+    height: 23px;
+    margin-right: 100px;
+}
+
+#subtotales input{
+    width: 80px;
+    height: 23px;
+    margin-right: 90px;
+}
+
+#añadirALista{
+    width: 115px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 56px;
+    color: #F6F1F1;
+    background-color: black;
+}
+
+#tablaDeCompras{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+#botonEliminar{
+    width: 115px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #F6F1F1;
+    background-color: black;
+    margin-left: -1050px;
+}
+
+#realizarCompra{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#realizarCompra button{
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 50px;
+    color: #F6F1F1;
+    background-color: black;
+}
+
+.seleccionada {
+    background-color: yellow;
+  }

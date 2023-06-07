@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/administrador.js"></script>
+    <title>Gestion Usuarios</title>
+    <link rel="stylesheet" href="../css/estilosgestionusuarios.css">
+
+</head>
+
+<body>
+
+    <div id="encabezado">
+        <h1>Gestion De usuarios</h1>
+    </div>
+
+    <div id="pagina">
+
+    <form action="javascript:adicionarUsuario()">
+
+        <div id="contenedorPrincipal">
+
+            <div id="identificaciones">
+                <h3>identificacion</h3>
+                <input type="text" id="identificacion">
+            </div>
+
+            <div id="correos">
+                <h3>Correo Electronico</h3>
+                <input type="text" id="correo">
+            </div>
+
+            <div id="claves">
+                <h3>Contraseña</h3>
+                <input type="password" name="clave" id="clave">
+            </div>
+
+            <div id="rolFecha">
+                <div id="rol">
+                    <h3>Rol</h3>
+                    <select id="roles">
+                        <option value="administrador">Administrador</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="vendedor">Vendedor</option>
+                        <option value="cliente">Cliente</option>
+                    </select>
+                </div>
+                <div id="fechasCreacion">
+                    <h3>Fecha de creacion del usuario</h3>
+                    <input type="datetime-local" id="fechaDeCreacion">
+                </div>
+            </div>
+
+
+            <div id="botones">
+                <input type="submit" value="Guardar">
+                <button>Actualizar</button>
+                <button>Eliminar</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+
+    <!-- <div class="informacion" title="Este es un mensaje de información importante.">
+        <p>Este es un elemento de información.</p>
+      </div> -->
+
+</body>
+
+</html>

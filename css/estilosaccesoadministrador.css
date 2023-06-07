@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-color: #F6F1F1;
+}
+
+#encabezado{
+    background-color: #19A7CE;
+    margin-top: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
+    height: 45px;
+}
+
+#bienvenido{
+    font-size: 60px;
+}
+
+#botonesSuperiores{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#botonesInferiores{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+button{
+    width: 170px;
+    height: 40px;
+    margin-right: 60px;
+    color: #F6F1F1;
+    background-color: #000000;
+    border-radius: 8px;
+}

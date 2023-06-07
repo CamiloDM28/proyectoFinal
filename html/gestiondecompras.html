@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosgestioncompras.css">
+    <script src="../js/gestioncompras.js"></script>
+    <title>Gestion de Compras</title>
+</head>
+
+<body>
+
+    <h1>Compra de Peliculas</h1>
+
+    <form action="javascript:mostrarPrecio()">
+
+        <div id="inputsSuperiores">
+
+            <div id="numeros">
+                <h3>Numero</h3>
+                <input type="number" id="numero">
+            </div>
+
+            <div id="peliculas">
+                <h3>Peliculas</h3>
+                <select id="selectorDePeliculas" onchange="mostrarPrecio()">
+                    <option value="">Selecciona una película</option>
+                    <option value="Titanic">Titanic</option>
+                    <option value="El Padrino">El Padrino</option>
+                    <option value="Forrest Gump">Forrest Gump</option>
+                    <option value="La lista de Schindler">La lista de Schindler</option>
+                    <option value="El Señor de los Anillos: El retorno del Rey">El Señor de los Anillos: El retorno del Rey</option>
+                    <option value="El Rey León">El Rey León</option>
+                    <option value="Gladiador">Gladiador</option>
+                    <option value="Interestelar">Interestelar</option>
+                    <option value="Avengers: Endgame">Avengers: Endgame</option>
+                    <option value="La La Land">La La Land</option>
+                    <option value="Bohemian Rhapsody">Bohemian Rhapsody</option>
+                    <option value="Jurassic Park">Jurassic Park</option>
+                    <option value="El Gran Gatsby">El Gran Gatsby</option>
+                    <option value="La forma del agua">La forma del agua</option>
+                    <option value="Interstellar">Interstellar</option>
+                    <option value="Blade Runner 2049">Blade Runner 2049</option>
+                    <option value="Spider-Man: Un nuevo universo">Spider-Man: Un nuevo universo</option>
+                    <option value="El padrino II">El padrino II</option>
+                    <option value="El bueno, el malo y el feo">El bueno, el malo y el feo</option>
+                    <option value="El club de la lucha">El club de la lucha</option>
+                    <option value="Matrix">Matrix</option>
+                    <option value="Volver al futuro">Volver al futuro</option>
+                    <option value="Seven">Seven</option>
+                    <option value="Ciudad de Dios">Ciudad de Dios</option>
+                    <option value="El Pianista">El Pianista</option>
+                    <option value="El resplandor">El resplandor</option>
+                    <option value="Amélie">Amélie</option>
+                    <option value="El club de los poetas muertos">El club de los poetas muertos</option>
+                    <option value="Donnie Darko">Donnie Darko</option>
+                    <option value="Memento">Memento</option>
+                    <option value="Taxi Driver">Taxi Driver</option>
+                    <option value="El exorcista">El exorcista</option>
+                    <option value="El laberinto del fauno">El laberinto del fauno</option>
+                    <option value="El sexto sentido">El sexto sentido</option>
+                    <option value="Sin City">Sin City</option>
+                    <option value="Apocalypse Now">Apocalypse Now</option>
+                    <option value="Ciudad de Dios">Ciudad de Dios</option>
+                    <option value="El Pianista">El Pianista</option>
+                    <option value="Amélie">Amélie</option>
+                    <option value="Donnie Darko">Donnie Darko</option>
+                    <option value="Memento">Memento</option>
+                    <option value="El laberinto del fauno">El laberinto del fauno</option>
+                    <option value="El sexto sentido">El sexto sentido</option>
+                    <option value="Sin City">Sin City</option>
+                    <option value="La naranja mecánica">La naranja mecánica</option>
+                    <option value="Blade Runner">Blade Runner</option>
+                    <option value="El gran Lebowski">El gran Lebowski</option>
+                    <option value="El club de los cinco">El club de los cinco</option>
+                    <option value="Reservoir Dogs">Reservoir Dogs</option>
+                    <option value="El silencio de los corderos">El silencio de los corderos</option>
+                    <option value="El viaje de Chihiro">El viaje de Chihiro</option>
+                    <option value="El quinto elemento">El quinto elemento</option>
+                </select>
+            </div>
+
+            <div id="cantidades" >
+                <h3>cantidad</h3>
+                <input type="number" id="cantidad">
+            </div>
+
+        </div>
+
+        <div id="inputsInferiores">
+
+            <div id="fecha">
+                <h3>Fecha</h3>
+                <input type="date" id="fechaCompra">
+            </div>
+
+            <div id="precios">
+                <h3>Precio</h3>
+                <input type="number" id="precio" onchange="calcularSubTotal()" readonly>
+            </div>
+
+            <div id="subtotales">
+                <h3>Subtotal</h3>
+                <input type="number" id="Subtotal" readonly>
+            </div>
+
+            <button type="submit" id="añadirALista" onclick="agregarFila()">Añadir a la Lista</button>
+
+        </div>
+
+        <hr>
+
+        <div id="tablaDeCompras">
+
+            <table border="1" id="tablaCompras">
+                <thead>
+                    <tr>
+                        <th>seleccionar</th>
+                        <th class="columnaPequeña">Numero</th>
+                        <th id="columnaPelicula">Pelicula</th>
+                        <th class="columnaPequeña">Cantidad</th>
+                        <th class="columnaMediana">Fecha</th>
+                        <th class="columnaMediana">Precio</th>
+                        <th class="columnaMediana">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+        </div>
+
+        <button id="botonEliminar" onclick="eliminarFilasSeleccionadas()">Eliminar</button>
+
+
+        <div id="realizarCompra">
+            <h3 id="resultado">Total</h3>
+            <button onclick="guardar()">Realizar Compra</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

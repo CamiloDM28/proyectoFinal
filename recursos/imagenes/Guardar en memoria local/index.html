@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function borrarDatos() {
+            //Al cargar el index se borran los datos guardados anteriormente
+            localStorage.removeItem("clientes");
+            localStorage.removeItem("empleados");
+
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Menu Principal</h1>
+
+    <ul>
+        <li><a href="html/cliente.html">Cliente</a></li>
+        <li><a href="html/empleado.html">Empleado</a></li>
+        <li><a href="html/listararrays.html">Ver datos array en consola</a></li>
+    </ul>
+
+    <button onclick="borrarDatos()">Borrar Datos LocalStore</button>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+body{
+    text-align: center;
+    background-color: #F6F1F1;
+}
+
+h1{
+    background-color: #19A7CE;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 45px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+form{
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pelcula-nombreOrigina{
+    display: flex;
+    margin-left: 100px;
+}
+
+#pelicula h3{
+    text-align: left;
+}
+
+#peliculas{
+    width: 170px;
+    height: 30px;
+    margin-right: 40px;
+    
+}
+
+#nombreOriginal h3{
+    text-align: left;
+    margin-left: 30px;
+}
+
+#nombreOriginal input{
+    width: 500px;
+    height: 25px;
+
+}
+
+#codigo-nombreAsignado{
+    display: flex;
+    margin-left: 100px;
+    justify-content: left;
+}
+
+#codigo{
+    text-align: left;
+}
+
+#codigo input{
+    margin-right: 40px;
+    height: 20px;
+}
+
+#nombreAsignado{
+    text-align: left;
+}
+
+#nombreAsignado input{
+    width: 500px;
+    height: 20px;
+
+}
+
+#genero-idiomaOriginal{
+    display: flex;
+    margin-left: 310px;
+    justify-content: left;
+}
+
+#genero{
+    text-align: left;
+}
+
+#genero input{
+    margin-right: 15px;
+    height: 20px;
+}
+
+#idiomaOriginal{
+    text-align: left;
+}
+
+#idiomaOriginal input{
+    width: 315px;
+    height: 20px;
+}
+
+#idiomasDisponibles{
+    margin-left: 310px;
+    text-align: left;
+}
+
+#subtitulosDisponibles{
+    margin-left: 310px;
+    text-align: left;
+}
+
+#duracion-afiches-copias{
+    display: flex;
+    justify-content: center;
+}
+
+#duracion-afiches-copias h3{
+    font-size: 17px;
+}
+
+#duracion{
+    display: flex;
+    margin-left: 110px;
+    justify-content: left;
+}
+
+#duracion h3{
+    text-align: left;
+    margin-right: 8px;
+}
+
+#horas input{
+    height: 20px;
+    width: 135px;
+    
+}
+
+#minutos input{
+    height: 20px;
+    width: 40px;
+}
+
+#segundos input{
+    height: 20px;
+    width: 40px;
+    text-align: left;
+
+}
+
+#afiches{
+    margin-left: 40px;
+}
+
+#afiches input{
+    width: 55px;
+    height: 20px;
+
+}
+
+#copias{
+    margin-right: -170px;
+    margin-left: 15px;
+}
+
+#copias input{
+    width: 55px;
+    height: 20px;
+
+}
+
+#productora{
+    margin-left: -15px;
+}
+
+#productora h3{
+    margin-left: -75px;
+}
+
+#productora input{
+    width: 300px;
+    height: 20px;
+    margin-right: -145px;
+}
+
+#actores{
+    display: flex;
+    justify-content: center;
+    margin-right: -400px;
+}
+
+#actores h3{
+    margin-right: 68px;
+}
+
+#actores input{
+    width: 220px;
+    height: 20px;
+}
+
+#actoresSecundarios{
+    margin-left: 23px;
+}
+
+#botones{
+    margin-top: 30px;
+    margin-left: -800px;
+}
+
+button{
+    margin-right: 40px;
+    width: 100px;
+    height: 30px;
+    color: #F6F1F1;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.agregar{
+    width: 30px;
+    border-radius: 20px;
+}
+
+.nuevoActor{
+    display: block;
+    margin-left: 390px;
+    width: 220px;
+}
+
+
+
+
+
