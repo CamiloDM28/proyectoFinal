@@ -55,33 +55,25 @@ class Usuario {
         }
     }
 
-function adicionarUsuario(){
+    function adicionarUsuario(){
 
-
-
-    var usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");;
-
-    var identificacionInput = document.getElementById("identificacion");
-    var correoInput = document.getElementById("correo");
-    var claveInput = document.getElementById("clave");
-    var rolSelect = document.getElementById("roles");
-    var fechaDeCreacionDelUsuarioInput = document.getElementById("fechaDeCreacion");
-
-    usuario = new Usuario(identificacionInput.value,correoInput.value, claveInput.value,rolSelect.value , fechaDeCreacionDelUsuarioInput.value);
-
-   
-    var administrador = new Usuario("admin", "admin@example.com", "admin123", "administrador", "2023-01-01");
-    usuarios.push(administrador);
-
-
-    usuarios.push(usuario);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
-    identificacionInput.value = "";
-    correoInput.value = "";
-    claveInput.value = "";
-    rolSelect.value = "";
-    fechaDeCreacionDelUsuarioInput.value = "";
-
-    identificacionInput.focus();
-}
+        var usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");;
+    
+        var identificacionInput = document.getElementById("identificacion");
+        var correoInput = document.getElementById("correo");
+        var claveInput = document.getElementById("clave");
+        var rolSelect = document.getElementById("roles");
+        var fechaDeCreacionDelUsuarioInput = document.getElementById("fechaDeCreacion");
+    
+        usuario = new Usuario(identificacionInput.value,correoInput.value, claveInput.value,rolSelect.value , fechaDeCreacionDelUsuarioInput.value);
+        usuarios.push(usuario);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    
+        identificacionInput.value = "";
+        correoInput.value = "";
+        claveInput.value = "";
+        rolSelect.value = "";
+        fechaDeCreacionDelUsuarioInput.value = "";
+    
+        identificacionInput.focus();
+    }

@@ -1,9 +1,27 @@
+var usuarioAdministrador = {
+  identificacion: "admin08",
+  correo: "admin@example.com",
+  clave: "admin123",
+  rol: "administrador",
+  fechaDeCreacion: "2023-06-05"
+};
+
+// Obtener el array de usuarios desde el almacenamiento local
+var usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
+
+// Agregar el usuario administrador al array de usuarios
+usuarios.push(usuarioAdministrador);
+
+// Guardar el array de usuarios en el almacenamiento local
+localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
 function login() {
+
   var numeroIdentificacion = document.getElementById("numero_identificacion").value;
   var contrasena = document.getElementById("contrasena").value;
 
   var clientes = JSON.parse(localStorage.getItem("clientes") || "[]");
-  var usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]")
+  var usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
 
   // Verificar si el usuario existe en el array de clientes
   var clienteEncontrado = clientes.find(function(cliente) {
@@ -40,3 +58,4 @@ if (clienteEncontrado || usuarioEncontrado) {
 
 console.log(JSON.parse(localStorage.getItem("clientes") || "[]"))
 console.log(JSON.parse(localStorage.getItem("usuarios") || "[]"))
+
